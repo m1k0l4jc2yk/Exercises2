@@ -1,7 +1,7 @@
 
 public class Shirt {
-  public int shirtID = 0; // Default ID for the shirt
-  public String description = "-description required-"; // default
+  public int shirtID = 0;
+  public String description = "-description required-";
   
   // The color codes are R=Red, B=Blue, G=Green, U=Unset
   public char colorCode = 'U';
@@ -15,8 +15,8 @@ public class Shirt {
     System.out.println("Color Code: " + colorCode);
     System.out.println("Item price: " + price);
     System.out.println("Quantity in stock: " + quantityInStock);
-  } // end of display method
-} // end of class
+  }
+}
 
 
 
