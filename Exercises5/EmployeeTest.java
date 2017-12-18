@@ -1,7 +1,6 @@
 
 public class EmployeeTest {
 
-
     public static void main(String[] args) {
         Printer myPrinter = new Printer();
         Manager myManager = new Manager();
