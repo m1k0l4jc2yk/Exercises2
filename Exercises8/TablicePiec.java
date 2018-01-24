@@ -6,12 +6,8 @@ public class TablicePiec {
         public static void main(String[] arg)
         {
 
-            // Sorted integer array array1 which has m elements,
-            // but size of array1 is m+n, sorted integer array array2 which has n elements
-
-            //declaration and instantiation.
             int array1[]=new int[8];
-//initialization.
+
             array1[0]=1;
             array1[1]=2;
             array1[2]=3;
