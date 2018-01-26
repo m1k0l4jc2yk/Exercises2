@@ -14,7 +14,6 @@ public class TestLicznik {
 
         for (int i = 0; i < usa.length; i++){
             wynik = wynik + usa[i]/usa.length;
-
         }
 
         double [] euro = new double[5];
