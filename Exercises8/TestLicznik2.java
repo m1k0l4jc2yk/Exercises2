@@ -35,6 +35,8 @@ public class TestLicznik2 {
             System.out.println("-----------------------");
         } else{
             System.out.println("Nie inwestuj w walutę USA");
+            System.out.println("Srednia 1 = "  + String.format("%.3f",srednia));
+            System.out.println("Srednia 2 = "  + String.format("%.3f",srednia2));
             System.out.println("-----------------------");
         }
     }
