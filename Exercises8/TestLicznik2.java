@@ -27,6 +27,7 @@ public class TestLicznik2 {
 
         for (int i = 0; i < usa2.length; i++){
             srednia2  = srednia2  + usa2[i]/usa2.length;
+
         }
 
         if (srednia <= usa[9] & srednia >= srednia2 & srednia <= usa[9] & srednia <= usa[8] & srednia <= usa[7] ){
@@ -37,6 +38,7 @@ public class TestLicznik2 {
             System.out.println("Nie inwestuj w walutę USA");
             System.out.println("Srednia 1 = "  + String.format("%.3f",srednia));
             System.out.println("Srednia 2 = "  + String.format("%.3f",srednia2));
+            System.out.println("Różnica = "  + String.format("%.3f",srednia-srednia2));
             System.out.println("-----------------------");
         }
     }
