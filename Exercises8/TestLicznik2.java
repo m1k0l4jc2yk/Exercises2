@@ -29,7 +29,7 @@ public class TestLicznik2 {
             srednia2  = srednia2  + usa2[i]/usa2.length;
         }
 
-        if (srednia <= usa[9] & srednia >= srednia2 & srednia <= usa[9] & srednia <= usa[8]){
+        if (srednia <= usa[9] & srednia >= srednia2 & srednia <= usa[9] & srednia <= usa[8] & srednia <= usa[7] ){
             System.out.println("Srednia mniejsza od ostatniej wartości kursu, Srednia = "  + String.format("%.3f",srednia) +"\nOstatnia wartość kursu = " +usa[9]);
             System.out.println("\nInwestuj USA !!!");
             System.out.println("-----------------------");
