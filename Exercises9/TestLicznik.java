@@ -1,9 +1,10 @@
-package Exercises8;
+package Exercises9;
 
 public class TestLicznik {
 
     public static void main(String[] args) {
         double[] usa = new double[12];
+
         usa[0] = 3.401;
         usa[1] = 3.419;
         usa[2] = 3.4109;
