@@ -1,4 +1,4 @@
-package Exercises8;
+package Exercises9;
 
 public class TestLicznik2 {
 
@@ -27,6 +27,7 @@ public class TestLicznik2 {
 
         for (int i = 0; i < usa2.length; i++){
             srednia2  = srednia2  + usa2[i]/usa2.length;
+
 
         }
 
