@@ -42,5 +42,34 @@ public class TestLicznik2 {
             System.out.println("Różnica = "  + String.format("%.3f",srednia-srednia2));
             System.out.println("-----------------------");
         }
+
+        double [] euro = {4.146, 4.148, 4.150, 4.161, 4.158, 4.154, 4.159, 4.173, 4.202, 4.184};
+
+        double [] euro2 = {4.182, 4.173, 4.166, 4.175, 4.169, 4.171, 4.163, 4.149, 4.147, 4.142, 4.146, 4.148, 4.150, 4.161, 4.158, 4.154, 4.159, 4.173, 4.202, 4.184};
+
+        double srednia3=0;
+
+        for (int i = 0; i < euro.length; i++){
+            srednia3 = srednia3 + euro[i]/euro.length;
+        }
+
+        double srednia4 =0;
+
+        for (int i = 0; i < euro2.length; i++){
+            srednia4  = srednia4  + euro2[i]/euro2.length;
+
+        }
+
+        if (srednia3 <= euro[9] & srednia3 >= srednia4){
+            System.out.println("Średnia mniejsza od ostatniej wartości kursu, Średnia = "  + String.format("%.3f",srednia4)
+                    +"\nOstatnia wartość kursu = " +euro[9]);
+            System.out.println("Warto Inwestować w walutę EURO !!!");
+
+        } else{
+            System.out.println("Średnia większa od ostatniej wartości kursu, Średnia = "  + String.format("%.3f",srednia4)
+                    +"\nOstatnia wartość kursu = " +euro[9]);
+            System.out.println("Nie inwestuj w walutę EURO");
+        }
     }
+
 }
