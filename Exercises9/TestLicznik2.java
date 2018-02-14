@@ -35,6 +35,7 @@ public class TestLicznik2 {
             System.out.println("Srednia mniejsza od ostatniej wartości kursu, Srednia = "  + String.format("%.3f",srednia) +"\nOstatnia wartość kursu = " +usa[9]);
             System.out.println("\nInwestuj USA !!!");
             System.out.println("-----------------------");
+
         } else{
             System.out.println("Nie inwestuj w walutę USA");
             System.out.println("Srednia 1 = "  + String.format("%.3f",srednia));
@@ -57,7 +58,6 @@ public class TestLicznik2 {
 
         for (int i = 0; i < euro2.length; i++){
             srednia4  = srednia4  + euro2[i]/euro2.length;
-
         }
 
         if (srednia3 <= euro[9] & srednia3 >= srednia4){
@@ -70,6 +70,36 @@ public class TestLicznik2 {
                     +"\nOstatnia wartość kursu = " +euro[9]);
             System.out.println("Nie inwestuj w walutę EURO");
         }
+        double srednia5 = 0;
+        double srednia6 = 0;
+
+        double [] gbp = {4.706, 4.707, 4.751, 4.738, 4.711, 4.687, 4.688, 4.729, 4.769, 4.724};
+
+        double [] gbp2 = {4.706, 4.705, 4.721, 4.730, 4.730, 4.752, 4.756, 4.768, 4.748, 4.708, 4.706, 4.707, 4.751, 4.738, 4.711, 4.687, 4.688, 4.729, 4.769, 4.724};
+
+
+        for (int i = 0; i < gbp.length; i++){
+            srednia5 = srednia5 + gbp[i]/gbp.length;
+        }
+
+        for (int i = 0; i < gbp2.length; i++){
+            srednia6  = srednia6 + gbp2[i]/gbp2.length;
+
+        }
+
+        if (srednia <= gbp[9] & srednia >= srednia2){
+            System.out.println("Średnia mniejsza od ostatniej wartości kursu \nŚrednia (10) = "  + String.format("%.3f",srednia) + "\nŚrednia (20) = "  + String.format("%.3f",srednia6)
+                    +"\nOstatnia wartość kursu = " +gbp[9]
+                    +"\nZmiana kursu = " + String.format("%.3f",gbp2[19] - gbp2[0]));
+            System.out.println("Warto Inwestować w walutę GBP !!!");
+
+        } else{
+            System.out.println("Średnia większa od ostatniej wartości kursu \nŚrednia (10) = "  + String.format("%.3f",srednia) + "\nŚrednia (20) = "  + String.format("%.3f",srednia6)
+                    +"\nOstatnia wartość kursu = " +gbp[9]
+                    +"\nZmiana kursu = " + String.format("%.3f",gbp2[19] - gbp2[0]));
+            System.out.println("Nie inwestuj w walutę GBP");
+        }
     }
+
 
 }
