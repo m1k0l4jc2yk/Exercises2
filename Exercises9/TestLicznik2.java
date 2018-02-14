@@ -64,11 +64,13 @@ public class TestLicznik2 {
             System.out.println("Średnia mniejsza od ostatniej wartości kursu, Średnia = "  + String.format("%.3f",srednia4)
                     +"\nOstatnia wartość kursu = " +euro[9]);
             System.out.println("Warto Inwestować w walutę EURO !!!");
+            System.out.println("-----------------------");
 
         } else{
             System.out.println("Średnia większa od ostatniej wartości kursu, Średnia = "  + String.format("%.3f",srednia4)
                     +"\nOstatnia wartość kursu = " +euro[9]);
             System.out.println("Nie inwestuj w walutę EURO");
+            System.out.println("-----------------------");
         }
         double srednia5 = 0;
         double srednia6 = 0;
@@ -92,12 +94,14 @@ public class TestLicznik2 {
                     +"\nOstatnia wartość kursu = " +gbp[9]
                     +"\nZmiana kursu = " + String.format("%.3f",gbp2[19] - gbp2[0]));
             System.out.println("Warto Inwestować w walutę GBP !!!");
+            System.out.println("-----------------------");
 
         } else{
             System.out.println("Średnia większa od ostatniej wartości kursu \nŚrednia (10) = "  + String.format("%.3f",srednia) + "\nŚrednia (20) = "  + String.format("%.3f",srednia6)
                     +"\nOstatnia wartość kursu = " +gbp[9]
                     +"\nZmiana kursu = " + String.format("%.3f",gbp2[19] - gbp2[0]));
             System.out.println("Nie inwestuj w walutę GBP");
+            System.out.println("-----------------------");
         }
     }
 
