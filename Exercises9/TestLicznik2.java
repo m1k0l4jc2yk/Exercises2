@@ -103,6 +103,38 @@ public class TestLicznik2 {
             System.out.println("Nie inwestuj w walutę GBP");
             System.out.println("-----------------------");
         }
+
+        double srednia7 = 0;
+        double srednia8 = 0;
+
+        double [] huf = { 1.337, 1.335, 1.338, 1.345, 1.341, 1.339, 1.341, 1.341, 1.346, 1.341};
+
+        double [] huf2 = {1.353, 1.350, 1.351, 1.349, 1.347, 1.345, 1.347, 1.341, 1.338, 1.338, 1.337, 1.335, 1.338, 1.345, 1.341, 1.339, 1.341, 1.341, 1.346, 1.341};
+
+
+        for (int i = 0; i < huf.length; i++){
+            srednia7 = srednia7 + huf[i]/huf.length;
+        }
+
+        for (int i = 0; i < huf2.length; i++){
+            srednia8  = srednia8  + huf2[i]/huf2.length;
+
+        }
+
+        if (srednia7 <= huf[9] & srednia7 >= srednia8){
+            System.out.println("Średnia mniejsza od ostatniej wartości\nŚrednia (10) = "  + String.format("%.3f",srednia) + "\nŚrednia (20) = "  + String.format("%.3f",srednia8)
+                    +"\nOstatnia wartość kursu = " +huf[9]
+                    +"\nZmiana kursu = " + String.format("%.3f",huf2[19] - huf2[0]));
+            System.out.println("Warto Inwestować w walutę HUF !!!");
+            System.out.println("-----------------------");
+
+        } else{
+            System.out.println("Średnia mniejsza od ostatniej wartości\nŚrednia (10) = "  + String.format("%.3f",srednia) + "\nŚrednia (20) = "  + String.format("%.3f",srednia8)
+                    +"\nOstatnia wartość kursu = " +huf[9]
+                    +"\nZmiana kursu = " + String.format("%.3f",huf2[19] - huf2[0]));
+            System.out.println("Nie inwestuj w walutę HUF");
+            System.out.println("-----------------------");
+        }
     }
 
 
