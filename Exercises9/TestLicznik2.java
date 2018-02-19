@@ -61,12 +61,14 @@ public class TestLicznik2 {
         }
 
         if (srednia3 <= euro[9] & srednia3 >= srednia4){
+            System.out.println("-----------------------");
             System.out.println("Średnia mniejsza od ostatniej wartości kursu, Średnia = "  + String.format("%.3f",srednia4)
                     +"\nOstatnia wartość kursu = " +euro[9]);
             System.out.println("Warto Inwestować w walutę EURO !!!");
             System.out.println("-----------------------");
 
         } else{
+            System.out.println("-----------------------");
             System.out.println("Średnia większa od ostatniej wartości kursu, Średnia = "  + String.format("%.3f",srednia4)
                     +"\nOstatnia wartość kursu = " +euro[9]);
             System.out.println("Nie inwestuj w walutę EURO");
@@ -90,6 +92,7 @@ public class TestLicznik2 {
         }
 
         if (srednia <= gbp[9] & srednia >= srednia2){
+            System.out.println("-----------------------");
             System.out.println("Średnia mniejsza od ostatniej wartości kursu \nŚrednia (10) = "  + String.format("%.3f",srednia) + "\nŚrednia (20) = "  + String.format("%.3f",srednia6)
                     +"\nOstatnia wartość kursu = " +gbp[9]
                     +"\nZmiana kursu = " + String.format("%.3f",gbp2[19] - gbp2[0]));
@@ -97,6 +100,7 @@ public class TestLicznik2 {
             System.out.println("-----------------------");
 
         } else{
+            System.out.println("-----------------------");
             System.out.println("Średnia większa od ostatniej wartości kursu \nŚrednia (10) = "  + String.format("%.3f",srednia) + "\nŚrednia (20) = "  + String.format("%.3f",srednia6)
                     +"\nOstatnia wartość kursu = " +gbp[9]
                     +"\nZmiana kursu = " + String.format("%.3f",gbp2[19] - gbp2[0]));
@@ -123,6 +127,7 @@ public class TestLicznik2 {
         }
 
         if (srednia7 <= huf[9] & srednia7 >= srednia8){
+            System.out.println("-----------------------");
             System.out.println("Średnia mniejsza od ostatniej wartości\nŚrednia (10) = "  + String.format("%.3f",srednia) + "\nŚrednia (20) = "  + String.format("%.3f",srednia8)
                     +"\nOstatnia wartość kursu = " +huf[9]
                     +"\nZmiana kursu = " + String.format("%.3f",huf2[19] - huf2[0]));
@@ -130,6 +135,7 @@ public class TestLicznik2 {
             System.out.println("-----------------------");
 
         } else{
+            System.out.println("-----------------------");
             System.out.println("Średnia mniejsza od ostatniej wartości\nŚrednia (10) = "  + String.format("%.3f",srednia) + "\nŚrednia (20) = "  + String.format("%.3f",srednia8)
                     +"\nOstatnia wartość kursu = " +huf[9]
                     +"\nZmiana kursu = " + String.format("%.3f",huf2[19] - huf2[0]));
