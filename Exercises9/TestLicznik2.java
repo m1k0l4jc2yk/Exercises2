@@ -3,6 +3,7 @@ package Exercises9;
 public class TestLicznik2 {
 
     public static void main(String[] args) {
+
         double [] usa = new double[10];
         usa[0] = 3.45;
         usa[1] = 3.46;
